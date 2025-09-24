@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Happy Birthday Treesa! 🎂</title>
+<title>Happy Birthday Maluu! 🎂</title>
 <style>
   /* Basic Reset and Styling */
   * {
@@ -377,8 +377,8 @@
     <img src="images/bday-cake.png" alt="Cake" class="cake-image" id="cakeImage" />
   </div>
   <div style="margin-top: 40px; text-align: center;">
-    <div id="giftBox" class="gift-box" tabindex="0" role="button" aria-label="Reveal Gift Box">🎁 Tap to Reveal Your Gift 🎁</div>
-    <img src="images/6.png" id="birthdayPhoto" class="hidden-photo" alt="Birthday Treesa" />
+    <div id="giftBox" class="gift-box" tabindex="0" role="button" aria-label="Reveal Gift Box">🎁 Tap here 🎁</div>
+    <img src="images/6.png" id="birthdayPhoto" class="hidden-photo" alt="Birthday Maluu" />
   </div>
 </section>
 
@@ -502,7 +502,7 @@
     const now = new Date();
     const diff = birthdayDate - now;
     if(diff <= 0){
-      timerEl.textContent = "🎉 Happy Birthday Treesa! 🎉";
+      timerEl.textContent = "🎉 Happy Birthday Maluu! 🎉";
       cakeBtn.disabled = false;
       cakeBtn.style.cursor = 'pointer';
       giftBox.style.pointerEvents = "auto";
@@ -625,7 +625,7 @@
   }
   function completeBlowing(){
     stopBlowing();
-    document.getElementById('blowMessage').innerHTML = '<div class="success-message">🎉 Many Many Happy Returns of the Day Treesa! 🎉</div>';
+    document.getElementById('blowMessage').innerHTML = '<div class="success-message">🎉 Many Many Happy Returns of the Day Maluu! 🎉</div>';
     createConfetti();
     setTimeout(() => {
       closeOverlay();
